@@ -5,6 +5,9 @@ import {
   HiBars3BottomRight,
 } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
+
+
 
 const Navbar = () => {
   return (
@@ -58,9 +61,11 @@ const Navbar = () => {
           </button>
 
           {/* SEARCH - ICON */}
+          <SearchBar />
+
 
           <button className="md:hidden">
-            <HiBars3BottomRight className="h-6 w-6 "></HiBars3BottomRight>
+            <HiBars3BottomRight className="h-6 w-6 text-gray-700"></HiBars3BottomRight>
           </button>
         </div>
       </nav>
